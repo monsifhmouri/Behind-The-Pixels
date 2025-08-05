@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Challenge for the Curious</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Share Tech Mono', monospace;
+      background-color: #0a0a0a;
+      color: #00ff99;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-bottom: 1rem;
+    }
+
+    img {
+      max-width: 90%;
+      height: auto;
+      margin: 20px 0;
+      border: 2px solid #00ff99;
+      border-radius: 8px;
+    }
+
+    a {
+      color: #00ffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    #audio-controls, #music-controls {
+      margin: 20px 0;
+    }
+
+    button {
+      background-color: #00ff99;
+      border: none;
+      color: #0a0a0a;
+      padding: 10px 20px;
+      margin: 0 5px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #00cc77;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧠 Challenge for the Curious</h1>
+  <p>Welcome to a little test of intelligence, creativity, and attention to detail.</p>
+  <p>This image holds a secret — a message encrypted and buried within.</p>
+  <p>No tools are mentioned, no guides are provided. Just you, your brain, and this image.</p>
+  <img src="secret.png" alt="Secret Challenge Image" />
+  <p>If you're clever enough to find what's hidden inside, you might uncover something... unexpected.</p>
+  <p>Once you extract what's buried, here's where to go next:</p>
+  <a href="https://github.com/monsifhmouri/MonstrMindCrypt" target="_blank">🔓 MonstrMindCrypt Tool on GitHub</a>
+
+  <!-- Encrypted audio controls -->
+  <div id="audio-controls">
+    <h3>Encrypted Audio</h3>
+    <audio id="challenge-audio" src="encrypted_text_audio.mp3"></audio>
+    <button onclick="playAudio()">Play</button>
+    <button onclick="pauseAudio()">Pause</button>
+  </div>
+
+  <!-- Music audio controls -->
+  <div id="music-controls">
+    <h3>Thunder Music</h3>
+    <audio id="music-audio" src="Thunder.mp3"></audio>
+    <button onclick="playMusic()">Play</button>
+    <button onclick="pauseMusic()">Pause</button>
+  </div>
+
+  <footer>
+    <p>Crafted for those who see beyond the surface. No AI. Just code, logic, and instinct.</p>
+  </footer>
+
+  <script>
+    const challengeAudio = document.getElementById('challenge-audio');
+    const musicAudio = document.getElementById('music-audio');
+
+    function playAudio() {
+      challengeAudio.play();
+    }
+    function pauseAudio() {
+      challengeAudio.pause();
+    }
+    function playMusic() {
+      musicAudio.play();
+    }
+    function pauseMusic() {
+      musicAudio.pause();
+    }
+  </script>
+</body>
+</html>
